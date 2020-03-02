@@ -60,7 +60,7 @@ body {
   font-size: 2.3vh;
   transition: all .4s;
   position: fixed;
-  top: 70vh;
+  top: 60vh;
   left: 20px;
   right: 20px;
   animation: float 6s ease-in-out infinite;
@@ -252,19 +252,19 @@ border-radius: 0;
 
 @keyframes float {
 	0% {
-		transform: rotate(-1deg) translatey(2px) translatex(5px) scale(.6);
+		transform: rotate(-1deg) translatey(2px) translatex(-85px) scale(.6);
 	}
 	50% {
-		transform: rotate(2deg) translatey(8px) translatex(-5px) scale(.6);
+		transform: rotate(2deg) translatey(-8px) translatex(-75px) scale(.6);
 	}
 	100% {
-		transform: rotate(-1deg) translatey(2px) translatex(5px) scale(.6);
+		transform: rotate(-1deg) translatey(2px) translatex(-85px) scale(.6);
 	}
 }
 
 @keyframes open {
 	0% {
-		transform: rotate(-1deg) translatey(2px) translatex(5px) scale(.6);
+		transform: rotate(-1deg) translatey(2px) translatex(-85px) scale(.6);
 	}
 	100% {
 		transform: rotate(0deg) translatey(0px) translatex(0px) scale(1);
