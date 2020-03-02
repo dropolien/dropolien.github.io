@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="114px" height="107px" viewBox="0 0 114 107" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>wave</title>
+    <desc>Created with Sketch.</desc>
+    <g id="wave" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M119,40.9590682 C108.435179,40.4938436 93.9079656,33.9863561 86.8973746,27 C79.4823264,34.4136439 69.2350792,39 57.9182676,39 C46.6114425,39 36.3951539,34.4006656 28.9801056,27 C21.5630601,34.4136439 6.31781031,41 -5,41 L-5,119 L119,119 L119,40.9590682 Z" id="Stroke-33" stroke="#0084BC" stroke-width="7" fill="#0083B8"></path>
+        <path d="M114,38.9590682 C103.435179,38.4938436 93.9079656,33.9863561 86.8973746,27 C79.4823264,34.4136439 69.2350792,39 57.9182676,39 C46.6114425,39 36.3951539,34.4006656 28.9801056,27 C21.5630601,34.4136439 11.3178103,39 0,39" id="Stroke-33" stroke="#45413C" stroke-width="7"></path>
+    </g>
+</svg>
