@@ -14,12 +14,25 @@ body {
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: 180px;
+  min-height: 100vh;
+  font-size: 2.3vh;
+  line-height: 1.3em;
+  position: relative;
+}
+
+.intro__lead {
+  font-size: 6vw;
+  margin-bottom: 6vh;
+  line-height: 1.1em;
+
 }
 .intro img {
-  margin-left: -20px;
   max-width: 65vw;
   transform: translatey(0px);
-	animation: float 6s ease-in-out infinite;
+  animation: float 6s ease-in-out infinite;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 .wave {
   background-image: url("wave.svg");
@@ -30,12 +43,27 @@ body {
   z-index: 10;
 }
 
-.letter {
-  position: relative;
+.ocean {
   z-index: 10;
   background-color: #0083B8;
-  color: #fff;
   padding: 20px;
+}
+
+.letter {
+  background-color: #FFFEF2;
+  border: 3px solid darkgoldenrod;
+  padding: 20px;
+  font-size: 1rem;
+  transition: all .4s;
+  position: fixed;
+  top: 100vh;
+}
+
+.letter--shown {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  right: 20px;
 }
 
 * {
