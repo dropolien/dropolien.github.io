@@ -9,11 +9,12 @@ body {
 .intro {
   background-color: #00B8F0;
   color: #fff;
-  padding: 20px 20px 5px 20px;
+  padding: 20px 20px 20px 20px;
   background-image: url("olieplatform.svg");
   background-repeat: no-repeat;
-  background-position: bottom right;
-  background-size: 180px;
+  background-position: bottom 20px right;
+  background-attachment: fixed;
+  background-size: 150px;
   min-height: 110vh;
   font-size: 2.3vh;
   line-height: 1.3em;
@@ -22,7 +23,7 @@ body {
 
 .wave {
   background-image: url("wave.svg");
-  height: 100px;
+  height: 70px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -41,7 +42,7 @@ body {
   transform: translatey(0px);
   animation: float 6s ease-in-out infinite;
   position: fixed;
-  bottom: 60px;
+  bottom: 30px;
   left: 0;
 }
 
