@@ -16,20 +16,23 @@ body {
   background-size: 180px;
 }
 .intro img {
-  transform: rotate(-1deg);
-  margin-bottom: -2px;
   margin-left: -20px;
   max-width: 65vw;
+  transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
 }
 .wave {
   background-image: url("wave.svg");
-  height: 50px;
+  height: 100px;
   margin-top: -50px;
+  margin-bottom: -50px;
   position: relative;
   z-index: 10;
 }
 
 .letter {
+  position: relative;
+  z-index: 10;
   background-color: #0083B8;
   color: #fff;
   padding: 20px;
@@ -211,4 +214,16 @@ border-radius: 0;
   -moz-transition: all 0.3s ease-out;
   -ms-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
+}
+
+@keyframes float {
+	0% {
+		transform: rotate(-1deg) translatey(2px) translatex(5px);
+	}
+	50% {
+		transform: rotate(2deg) translatey(8px) translatex(-5px);
+	}
+	100% {
+		transform: rotate(-1deg) translatey(2px) translatex(5px);
+	}
 }
