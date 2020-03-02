@@ -14,10 +14,20 @@ body {
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: 180px;
-  min-height: 100vh;
+  min-height: 110vh;
   font-size: 2.3vh;
   line-height: 1.3em;
   position: relative;
+}
+
+.wave {
+  background-image: url("wave.svg");
+  height: 100px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 10;
 }
 
 .intro__lead {
@@ -30,18 +40,11 @@ body {
   max-width: 65vw;
   transform: translatey(0px);
   animation: float 6s ease-in-out infinite;
-  position: absolute;
-  bottom: 0;
+  position: fixed;
+  bottom: 60px;
   left: 0;
 }
-.wave {
-  background-image: url("wave.svg");
-  height: 100px;
-  margin-top: -50px;
-  margin-bottom: -50px;
-  position: relative;
-  z-index: 10;
-}
+
 
 .ocean {
   z-index: 10;
@@ -53,7 +56,7 @@ body {
   background-color: #FFFEF2;
   border: 3px solid darkgoldenrod;
   padding: 20px;
-  font-size: 1rem;
+  font-size: 2.3vh;
   transition: all .4s;
   position: fixed;
   top: 100vh;
