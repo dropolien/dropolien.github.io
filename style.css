@@ -115,7 +115,6 @@ option:first {
 }
 
 .form__row input {
-  font-size: 1em;
   padding: 5px 10px;
   max-width: 100%;
   box-sizing: border-box;
@@ -127,7 +126,6 @@ option:first {
 
 .form__row select {
   display: inline-block;
-  font-size: 1.2em;
   padding: 5px 12px;
 }
 
