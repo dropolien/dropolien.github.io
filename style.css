@@ -4,12 +4,13 @@ body {
   font-size: 1.2em;
   padding: 0;
   margin: 0;
+  background-color: #00B8F0;
 }
 /* #C9F7FF #773400 */
 
 .wrapper {
   min-height: 110vh;
-  background-color: #00B8F0;
+  
 }
 .intro {
   color: #fff;
