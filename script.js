@@ -11,7 +11,7 @@ function handleScroll(e) {
     if (scrollTop > 10) {
       letterEl.classList.add("letter--shown")
     } else {
-      letterEl.classList.remove("letter--shown")
+      // letterEl.classList.remove("letter--shown")
     }
 }
 
