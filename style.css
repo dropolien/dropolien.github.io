@@ -53,7 +53,7 @@ body {
 .letter {
   background-color: #FFFEF2;
   box-shadow: 5px 5px 5px -4px rgba(0,0,0,1);
-  padding: 20px;
+  padding: 40px 20px 20px 20px;
   font-size: 2.3vh;
   line-height: 1.5em;
   transition: all .4s;
@@ -82,16 +82,26 @@ body {
 .letter__checkbox {
   display: inline-block;
   margin-right: 2px;
+  margin-left: 20px;
   height: .8em;
   width: .8em;
   border: 2px solid #000;
+}
+
+.letter__checkbox:first-of-type {
+  margin-left: 40px;
+}
+
+.letter__option {
+  display: inline-block;
+  
 }
 
 .letter__close {
   opacity: 0;
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
 }
 
 .letter--shown .letter__close {
@@ -99,8 +109,26 @@ body {
 }
 
 .letter__header{
-  font-family: 'Gloria Hallelujah';
+  font-family: 'Caveat', cursive;
+  font-size: 3.5em;
+  margin-bottom: 40px;
+}
+
+.letter__lead{
+  font-family: 'Caveat', cursive;
   font-size: 2.5em;
+}
+
+.letter__lead p {
+  margin: 0 0 20px 0;
+}
+
+.letter__heart {
+  position: absolute;
+  top:20px;
+  right: 20px;
+  width: 50px;
+  transform: rotate(-15deg);
 }
 
 option:first {

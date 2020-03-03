@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8" />
   
-  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Caveat:700|Montserrat&display=swap" rel="stylesheet">
   <link rel='stylesheet' href='style.css' type='text/css' />
 
 </head>
@@ -30,9 +30,15 @@
 
   <div class="letter">
     <div class="letter__header">Kære Dan...</div>
-    <p>Vil du droppe olien?</p>
-      <div class="letter__checkbox"></div> Ja
-      <div class="letter__checkbox"></div> Nej
+    <div class="letter__lead">
+      <p>Vil du droppe olien?</p>
+      <p>
+        <div class="letter__checkbox"></div> <div class="letter__option">Ja</div>
+      <div class="letter__checkbox"></div> <div class="letter__option">Nej</div>
+      </p>
+      
+    </div>
+    
     <div class="letter__content">
       
       <p>Jeg ved at du kan lide mig og at du gerne vil passe på mig. </p>
@@ -71,9 +77,10 @@
       </form>
 
       <button class="letter__close"> ❌</button>
+      
     </div>
 
-
+    <img class="letter__heart" src="heart.svg">
   </div>
 
   <div class="wave"></div>
