@@ -36,5 +36,5 @@ myform.addEventListener("submit", function (e) {
   canForm["Alder"].value = myForm["age"].value
   canForm["form-email"].value = myForm["email"].value
   document.querySelector(".js-affirmative_optin_radio").checked = true
-  // canForm.submit()
+  canForm.submit()
 })
