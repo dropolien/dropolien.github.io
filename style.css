@@ -163,7 +163,7 @@ option:first {
 }
 
 .can-form {
-  display: n one;
+  display: none;
 }
 
 .checkbox-label {
