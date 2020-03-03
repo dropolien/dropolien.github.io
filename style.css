@@ -61,18 +61,14 @@ body {
   line-height: 1.5em;
   transition: all .4s;
   position: fixed;
-  top: 60vh;
+  top: 20px;
   left: 20px;
   right: 20px;
   animation: float 6s ease-in-out infinite;
 }
 
 .letter--shown {
-  position: fixed;
-  top: 20px;
-  animation: open .6s ;
-  
-
+  animation: open .6s;
 }
 
 * {
@@ -255,21 +251,21 @@ border-radius: 0;
 
 @keyframes float {
 	0% {
-		transform: rotate(-1deg) translatey(2px) translatex(-85px) scale(.6);
+		transform: rotate(-1deg) translatey(2px) translatex(-85px) scale(.6) translate(-0%, 150%);
 	}
 	50% {
-		transform: rotate(2deg) translatey(-8px) translatex(-75px) scale(.6);
+		transform: rotate(2deg) translatey(-8px) translatex(-75px) scale(.6) translate(-0%, 150%);
 	}
 	100% {
-		transform: rotate(-1deg) translatey(2px) translatex(-85px) scale(.6);
+		transform: rotate(-1deg) translatey(2px) translatex(-85px) scale(.6) translate(-0%, 150%);
 	}
 }
 
 @keyframes open {
 	0% {
-		transform: rotate(-1deg) translatey(2px) translatex(-85px) scale(.6);
+		transform: rotate(-1deg) translatey(2px) translatex(-85px) scale(.6) translate(-0%, 150%);
 	}
 	100% {
-		transform: rotate(0deg) translatey(0px) translatex(0px) scale(1);
+		transform: rotate(0deg) translatey(0px) translatex(0px) scale(1) translate(0%, 0%);
 	}
 }
