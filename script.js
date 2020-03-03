@@ -1,7 +1,6 @@
-function showLetter() {
-  var letterEl = document.getElementById("letter")
-  
-}
+
+
+var letterEl = document.getElementById("letter")
 
 function handleScroll(e) {
   var scrollTop = window.scrollY
@@ -15,3 +14,8 @@ function handleScroll(e) {
 }
 
 window.addEventListener('scroll', handleScroll);
+
+window.addEventListener('click', function () {
+  var letterEl = document.getElementById("letter")
+  letterEl.classList.add("letter--shown")
+})

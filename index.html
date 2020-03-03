@@ -30,18 +30,46 @@
   
   <div class="letter" id="letter">
     <div class="by-hand">Kære Dan, drop olien</div>
-    <input placeholder="Dit navn">
+    
     <div class="letter__content">
       <p>Jeg ved at du kan lide mig og at du gerne vil passe på mig. </p>
       <p>Det er jeg glad for, men du bliver nødt til at slå op med olien først, hvis det skal fungere mellem os. </p>
       <p>Vil du aflyse udbudsrunden og vælge en fremtid med mig?</p>
 
-      c Ja
-      c Nej
+      <div class="letter__checkbox"></div> Ja
+      <div class="letter__checkbox"></div> Nej
 
       <p>s.u. hurtigst muligt og senest 5. juni 2020 kl. 12.00. </p>
 
-      <p>Kærlig hilsen Klimaet</p>
+      <p>Kærlig hilsen Klimaet og</p>
+      <form id="form">
+        <div class="form__row">
+          <div class="form__name"><input placeholder="Dit fornavn" required></div>
+          <div class="form__surname"><input placeholder="Dit efternavn" required></div>
+        </div>
+        <div class="form__row">
+          <div class="form__email"><input placeholder="Din email" type="email" required></div>
+          <div class="form__age">
+            <select required>
+              <option value="">Vælg alder</option>
+              <option value="13-19">13-19</option>
+              <option value="20-29">20-29</option>
+              <option value="30-39">30-39</option>
+              <option value="40-49">40-49</option>
+              <option value="50-59">50-59</option>
+              <option value="60-69">60-69</option>
+              <option value="70-79">70-79</option>
+              <option value="80-89">80-89</option>
+              <option value="90-99">90-99</option>
+              <option value="99+">99+</option>
+            </select>
+          </div>
+        </div>
+        <div class="form__btn">
+          <button>Send</button>
+        </div>
+      </form>
+
       
     </div>
 

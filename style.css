@@ -62,52 +62,77 @@ body {
 
 .letter--shown {
   animation: open .6s;
+  z-index: 11;
 }
 
-.form input {
-  font-size: 1.2rem;
-  padding: 10px;
-  max-width: 100%;
-}
 
+.letter__checkbox {
+  display: inline-block;
+  margin-right: 2px;
+  height: .8em;
+  width: .8em;
+  border: 2px solid #000;
+}
 
 .by-hand {
   font-family: 'Gloria Hallelujah';
   font-size: 1.5em;
 }
 
+option:first {
+  color: #999;
+}
 
 .form__row {
   display: flex;
-  align-items: stretch;
-  margin-bottom: 10px;
+  align-items: center;
+  margin-bottom: 7px;
 }
 
 .form__name {
-  margin-bottom: 10px;
-}
-
-.form__email {
   flex: 1;
   margin-right: 10px;
 }
 
-.form__row input, .form__row button {
-  width: 100%;
+.form__surname {
+  flex: 1;
 }
 
-.form__age {
-  flex: 0 0 100px;
+.form__email {
+  flex: 2;
   margin-right: 10px;
+}
+
+
+
+.form__age {
+  flex: 1;
 }
 
 .form__btn {
   flex: 0 0 100px;
 }
 
+.form__row input {
+  font-size: 1em;
+  padding: 5px 10px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.form__row input, .form__row button {
+  width: 100%;
+}
+
+.form__row select {
+  display: inline-block;
+  font-size: 1.2em;
+  padding: 5px 12px;
+}
+
 .form__btn button {
   font-size: 1.2em;
-  padding: 12px;
+  padding: 5px 10px;
 }
 
 .footer {
@@ -240,19 +265,19 @@ border-radius: 0;
 
 @keyframes float {
 	0% {
-		transform: rotate(-1deg) translatey(2px) translatex(-85px) scale(.6) translate(0%, 100vh);
+		transform: rotate(-1deg) translatey(2px) translatex(-85px) scale(.6) translate(0%, 90vh);
 	}
 	50% {
-		transform: rotate(2deg) translatey(-8px) translatex(-75px) scale(.6) translate(0%, 100vh);
+		transform: rotate(2deg) translatey(-8px) translatex(-75px) scale(.6) translate(0%, 90vh);
 	}
 	100% {
-		transform: rotate(-1deg) translatey(2px) translatex(-85px) scale(.6) translate(0%, 100vh);
+		transform: rotate(-1deg) translatey(2px) translatex(-85px) scale(.6) translate(0%, 90vh);
 	}
 }
 
 @keyframes open {
 	0% {
-		transform: rotate(-1deg) translatey(2px) translatex(-85px) scale(.6) translate(0%, 100vh);
+		transform: rotate(-1deg) translatey(2px) translatex(-85px) scale(.6) translate(0%, 90vh);
 	}
 	100% {
 		transform: rotate(0deg) translatey(0px) translatex(0px) scale(1) translate(0, 0);
