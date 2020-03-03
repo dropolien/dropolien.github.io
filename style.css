@@ -97,9 +97,9 @@ body {
   opacity: 1;
 }
 
-.by-hand {
+.letter__header{
   font-family: 'Gloria Hallelujah';
-  font-size: 1.5em;
+  font-size: 2.5em;
 }
 
 option:first {
@@ -163,7 +163,7 @@ option:first {
 }
 
 .can-form {
-  display: none;
+  display: n one;
 }
 
 .checkbox-label {

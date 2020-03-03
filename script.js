@@ -24,3 +24,17 @@ closeEl.addEventListener("click", function(e) {
   letterEl.classList.toggle("letter--shown");
   e.stopPropagation();
 });
+
+var myForm = document.forms.myform
+
+myform.addEventListener("submit", function (e) {
+  e.preventDefault()
+  var canForm = document.forms.new_signature
+  if(!canForm["form-first_name"]) return
+  canForm["form-first_name"].value = myForm["name"].value
+  canForm["form-last_name"].value = myForm["surname"].value
+  canForm["Alder"].value = myForm["age"].value
+  canForm["form-email"].value = myForm["email"].value
+  document.querySelector(".js-affirmative_optin_radio").checked = true
+  // canForm.submit()
+})

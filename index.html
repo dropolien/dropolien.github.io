@@ -29,7 +29,7 @@
   <img class="platform" src="olieplatform.svg">
 
   <div class="letter">
-    <div class="by-hand">Kære Dan...</div>
+    <div class="letter__header">Kære Dan...</div>
 
     <div class="letter__content">
       
@@ -43,15 +43,15 @@
       <p>s.u. hurtigst muligt og senest 5. juni 2020 kl. 12.00. </p>
 
       <p>Kærlig hilsen Klimaet og</p>
-      <form id="form">
+      <form name="myform">
         <div class="form__row">
-          <div class="form__name"><input placeholder="Dit fornavn" type="text" required></div>
-          <div class="form__surname"><input placeholder="Dit efternavn" type="text" required></div>
+          <div class="form__name"><input placeholder="Dit fornavn" type="text" name="name" required></div>
+          <div class="form__surname"><input placeholder="Dit efternavn" type="text" name="surname" required></div>
         </div>
         <div class="form__row">
-          <div class="form__email"><input placeholder="Din email" type="email" required></div>
+          <div class="form__email"><input placeholder="Din email" type="email" name="email" required></div>
           <div class="form__age">
-            <select required>
+            <select required name="age">
               <option value="">Vælg alder</option>
               <option value="13-19">13-19</option>
               <option value="20-29">20-29</option>
