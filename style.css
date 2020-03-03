@@ -6,26 +6,34 @@ body {
   margin: 0;
 }
 /* #C9F7FF #773400 */
-.intro {
+
+.wrapper {
+  min-height: 110vh;
   background-color: #00B8F0;
+}
+.intro {
   color: #fff;
   padding: 20px 20px 20px 20px;
-  background-image: url("olieplatform.svg");
-  background-repeat: no-repeat;
-  background-position: bottom 20px right;
-  background-attachment: fixed;
   background-size: 150px;
-  min-height: 110vh;
   font-size: 2.3vh;
   line-height: 1.5em;
-  position: relative;
+  position: fixed;
+}
+
+.platform {
+  bottom: 30px;
+  right: 0;
+  position: fixed;
+  z-index: 9;
+  width: 120px;
+  height: auto;
 }
 
 .wave {
   background-image: url("wave.svg");
   height: 70px;
-  bottom: 0;
   left: 0;
+  bottom: 0;
   right: 0;
   position: fixed;
   z-index: 10;
@@ -36,21 +44,6 @@ body {
   margin-bottom: 6vh;
   line-height: 1.1em;
 
-}
-.intro img {
-  max-width: 65vw;
-  transform: translatey(0px);
-  animation: float 6s ease-in-out infinite;
-  position: fixed;
-  bottom: 30px;
-  left: 0;
-}
-
-
-.ocean {
-  z-index: 10;
-  background-color: #0083B8;
-  padding: 20px;
 }
 
 .letter {
@@ -69,10 +62,6 @@ body {
 
 .letter--shown {
   animation: open .6s;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 .form input {
@@ -251,21 +240,21 @@ border-radius: 0;
 
 @keyframes float {
 	0% {
-		transform: rotate(-1deg) translatey(2px) translatex(-85px) scale(.6) translate(-0%, 150%);
+		transform: rotate(-1deg) translatey(2px) translatex(-85px) scale(.6) translate(0%, 100vh);
 	}
 	50% {
-		transform: rotate(2deg) translatey(-8px) translatex(-75px) scale(.6) translate(-0%, 150%);
+		transform: rotate(2deg) translatey(-8px) translatex(-75px) scale(.6) translate(0%, 100vh);
 	}
 	100% {
-		transform: rotate(-1deg) translatey(2px) translatex(-85px) scale(.6) translate(-0%, 150%);
+		transform: rotate(-1deg) translatey(2px) translatex(-85px) scale(.6) translate(0%, 100vh);
 	}
 }
 
 @keyframes open {
 	0% {
-		transform: rotate(-1deg) translatey(2px) translatex(-85px) scale(.6) translate(-0%, 150%);
+		transform: rotate(-1deg) translatey(2px) translatex(-85px) scale(.6) translate(0%, 100vh);
 	}
 	100% {
-		transform: rotate(0deg) translatey(0px) translatex(0px) scale(1) translate(0%, 0%);
+		transform: rotate(0deg) translatey(0px) translatex(0px) scale(1) translate(0, 0);
 	}
 }
