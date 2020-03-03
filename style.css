@@ -68,6 +68,15 @@ body {
   z-index: 12;
 }
 
+.letter__content {
+  opacity: 0;
+  transition: all .5s;
+}
+
+.letter--shown .letter__content {
+
+  opacity: 1;
+}
 
 .letter__checkbox {
   display: inline-block;

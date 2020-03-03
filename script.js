@@ -6,7 +6,7 @@ var closeEl = document.querySelector(".letter__close");
 var letterEl = document.querySelector(".letter");
 
 function handleScroll(e) {
-  if (window.scrollY > 10) {
+  if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
     letterEl.classList.add("letter--shown");
     letterEl.classList.remove("js-letter-open");
   } else {
