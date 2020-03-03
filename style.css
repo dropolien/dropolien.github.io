@@ -294,19 +294,19 @@ textarea {
 
 @keyframes float {
 	0% {
-		transform: rotate(-1deg) translatey(2px) translatex(-85px) scale(.6) translate(0%, calc(var(--vh, 1vh) * 100));
+		transform: rotate(-1deg) translatey(2px) translatex(-85px) scale(.6) translate(0%, calc(var(--vh, 1vh) * 90));
 	}
 	50% {
-		transform: rotate(2deg) translatey(-8px) translatex(-75px) scale(.6) translate(0%, calc(var(--vh, 1vh) * 100));
+		transform: rotate(2deg) translatey(-8px) translatex(-75px) scale(.6) translate(0%, calc(var(--vh, 1vh) * 90));
 	}
 	100% {
-		transform: rotate(-1deg) translatey(2px) translatex(-85px) scale(.6) translate(0%, calc(var(--vh, 1vh) * 100));
+		transform: rotate(-1deg) translatey(2px) translatex(-85px) scale(.6) translate(0%, calc(var(--vh, 1vh) * 90));
 	}
 }
 
 @keyframes open {
 	0% {
-		transform: rotate(-1deg) translatey(2px) translatex(-85px) scale(.6) translate(0%, calc(var(--vh, 1vh) * 100));
+		transform: rotate(-1deg) translatey(2px) translatex(-85px) scale(.6) translate(0%, calc(var(--vh, 1vh) * 90));
 	}
 	100% {
 		transform: rotate(0deg) translatey(0px) translatex(0px) scale(1) translate(0, 0);
