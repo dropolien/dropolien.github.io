@@ -23,7 +23,7 @@ body {
 }
 
 .platform {
-  bottom: 30px;
+  bottom: 10px;
   right: 0;
   position: fixed;
   z-index: 9;
@@ -39,6 +39,7 @@ body {
   right: 0;
   position: fixed;
   z-index: 10;
+  transform: translateY(20px);
 }
 
 .intro__lead {
@@ -282,19 +283,19 @@ textarea {
 
 @keyframes float {
 	0% {
-		transform: rotate(-1deg) translatey(2px) translatex(-85px) scale(.6) translate(0%, 90vh);
+		transform: rotate(-1deg) translatey(2px) translatex(-85px) scale(.6) translate(0%, calc(var(--vh, 1vh) * 100));
 	}
 	50% {
-		transform: rotate(2deg) translatey(-8px) translatex(-75px) scale(.6) translate(0%, 90vh);
+		transform: rotate(2deg) translatey(-8px) translatex(-75px) scale(.6) translate(0%, calc(var(--vh, 1vh) * 100));
 	}
 	100% {
-		transform: rotate(-1deg) translatey(2px) translatex(-85px) scale(.6) translate(0%, 90vh);
+		transform: rotate(-1deg) translatey(2px) translatex(-85px) scale(.6) translate(0%, calc(var(--vh, 1vh) * 100));
 	}
 }
 
 @keyframes open {
 	0% {
-		transform: rotate(-1deg) translatey(2px) translatex(-85px) scale(.6) translate(0%, 90vh);
+		transform: rotate(-1deg) translatey(2px) translatex(-85px) scale(.6) translate(0%, calc(var(--vh, 1vh) * 100));
 	}
 	100% {
 		transform: rotate(0deg) translatey(0px) translatex(0px) scale(1) translate(0, 0);
